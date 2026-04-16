@@ -7,19 +7,10 @@ bool isValid(String input) {
   final ParseResult result = parse(input);
   return result is ParseSuccess;
 }
-
 bool isPossible(String input) {
   final normalized = normalize(input);
-
-  if (normalized is NormalizeFailure) {
-    return false;
+  if (normalized is NormalizeSuccess) {
+    return normalized.digits.length == mobileLength;
   }
-
-  final String digits = (normalized as NormalizeSuccess).digits;
-
-  if (digits.length != mobileLength) {
-    return false;
-  }
-
-  return true;
+  return false;
 }

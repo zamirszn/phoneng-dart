@@ -1,5 +1,6 @@
 
-import 'package:phone_ng/phone_ng.dart';
+
+import 'package:phone_ng/src/models.dart';
 
 final Map<String, PrefixEntry> prefixMap = {
   // 08xx Series

@@ -1,4 +1,4 @@
-import 'package:phone_ng/phone_ng.dart';
+import 'package:phone_ng/src/models.dart';
 import 'package:phone_ng/src/prefixes.dart';
 
 final RegExp parserLetterRegex = RegExp(r'[a-zA-Z]');
