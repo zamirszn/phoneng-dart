@@ -1,0 +1,19 @@
+{
+  "name": "Dart Package Dev",
+  "image": "dart:stable",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Dart-Code.dart-code"
+      ],
+      "settings": {
+        "dart.flutterSdkPath": null
+      }
+    }
+  },
+  "postCreateCommand": "dart pub get",
+  "remoteUser": "root"
+}
