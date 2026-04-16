@@ -12,9 +12,9 @@ String toNational(String national10){
 String toInternational(String national10){
   if (national10.length != 10) return national10;
 
-  final part1 = national10.substring(0,3);
-  final part2 = national10.substring(3,6);
-  final part3 = national10.substring(6);
+  final String part1 = national10.substring(0,3);
+  final String part2 = national10.substring(3,6);
+  final String part3 = national10.substring(6);
 
   return "+$countryCode $part1 $part2 $part3";
 } 
