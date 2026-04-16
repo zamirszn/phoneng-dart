@@ -57,9 +57,12 @@ final class ParseSuccess extends ParseResult{
 }
 
 class ParseFailure extends ParseResult{
-  final String message;
+  final ParseErrorCode reason;
+  final bool valid;
+  final String input;
 
-  ParseFailure({required this.message});
+  ParseFailure({required this.reason, required this.valid, required this.input});
+
 }
 
 

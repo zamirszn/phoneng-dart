@@ -116,6 +116,7 @@ const trunkPrefix = "0";
 const mobileLength =  10;
 const e164Prefix = "+234";
 const rfc3966Prefix = "tel:+";
+const intlPrefix = "+234";
 
 
 
