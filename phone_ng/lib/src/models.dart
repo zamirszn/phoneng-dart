@@ -30,7 +30,9 @@ final class PrefixEntry {
   PrefixEntry({required this.network, required this.type});
 }
 
-final class ParseSuccess {
+sealed class ParseResult{}
+
+final class ParseSuccess extends ParseResult{
   final bool valid;
   final String e164;
   final String national;
@@ -52,4 +54,46 @@ final class ParseSuccess {
     required this.network,
     required this.type,
   });
+}
+
+class ParseFailure extends ParseResult{
+  final String message;
+
+  ParseFailure({required this.message});
+}
+
+
+final class BatchResult{
+  final List<ParseResult> results;
+  final BatchSummary summary;
+
+  BatchResult({required this.results, required this.summary});
+
+}
+
+final class BatchSummary{
+  final int total;
+  final int valid;
+  final int invalid;
+  final Map<Network, int> byNetwork;
+
+  BatchSummary({required this.total, required this.valid, required this.invalid, required this.byNetwork});
+ 
+}
+
+sealed class NormalizeResult{
+
+}
+
+final class NormalizeSuccess extends NormalizeResult{
+  final String digits;
+
+  NormalizeSuccess({required this.digits});
+}
+
+final class NormalizeFailure extends NormalizeResult{
+  final ParseErrorCode reason;
+
+  NormalizeFailure({required this.reason});
+
 }
