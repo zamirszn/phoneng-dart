@@ -1,5 +1,6 @@
 name: phone_ng
-description: A starting point for Dart libraries or applications.
+
+description: Zero-dependency Dart library for parsing, validating, normalizing, and formatting Nigerian phone numbers
 version: 1.0.0
 # repository: https://github.com/my_org/my_repo
 
