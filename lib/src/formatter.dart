@@ -15,7 +15,7 @@ String toInternational(String national10) {
   final String part2 = national10.substring(3, 6);
   final String part3 = national10.substring(6);
 
-  return "+$countryCode $part1 $part2 $part3";
+  return "+$countryCode$part1 $part2 $part3";
 }
 
 String toCompact(String national10) {
