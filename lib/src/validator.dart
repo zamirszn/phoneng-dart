@@ -7,6 +7,7 @@ bool isValid(String input) {
   final ParseResult result = parse(input);
   return result is ParseSuccess;
 }
+
 bool isPossible(String input) {
   final normalized = normalize(input);
   if (normalized is NormalizeSuccess) {

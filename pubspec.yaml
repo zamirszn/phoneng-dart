@@ -3,6 +3,11 @@ name: phone_ng
 description: Zero-dependency Dart library for parsing, validating, normalizing, and formatting Nigerian phone numbers
 version: 1.0.0
 repository: https://github.com/zamirszn/phoneng-dart
+topics:
+  - nigeria
+  - phone-number
+  - validation
+  - utility
 
 environment:
   sdk: ^3.11.5

@@ -18,11 +18,11 @@ void main() {
 
   // Test Case 2: Batch parsing
   final List<String> rawNumbers = [
-    '08031112222', 
+    '08031112222',
     '07013334444',
-    '08055556666', 
-    'invalid-no',  
-    '09097778888', 
+    '08055556666',
+    'invalid-no',
+    '09097778888',
   ];
 
   final batch = parseMany(rawNumbers);

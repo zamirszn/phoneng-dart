@@ -1,5 +1,3 @@
-
-
 import 'package:phone_ng/src/models.dart';
 
 final Map<String, PrefixEntry> prefixMap = {
@@ -114,11 +112,7 @@ final Map<String, PrefixEntry> prefixMap = {
 
 const countryCode = "234";
 const trunkPrefix = "0";
-const mobileLength =  10;
+const mobileLength = 10;
 const e164Prefix = "+234";
 const rfc3966Prefix = "tel:+";
 const intlPrefix = "+234";
-
-
-
-
